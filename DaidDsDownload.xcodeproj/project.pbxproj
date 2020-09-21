@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A103CCF41DB6C41C0051EBB5 /* SynologyWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A103CCF31DB6C41C0051EBB5 /* SynologyWebService.swift */; };
+		A103CCF61DB6CFE10051EBB5 /* LoginOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A103CCF51DB6CFE10051EBB5 /* LoginOperation.swift */; };
+		A1243CCB1DB9670B00BC25B3 /* LogoutOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1243CCA1DB9670B00BC25B3 /* LogoutOperation.swift */; };
+		A14863971DCB755600557B94 /* CreateDownloadTorrentURLTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14863961DCB755600557B94 /* CreateDownloadTorrentURLTaskOperation.swift */; };
+		A14863981DCB7D2F00557B94 /* CreateDownloadTorrentURLTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14863961DCB755600557B94 /* CreateDownloadTorrentURLTaskOperation.swift */; };
+		A150938F1DDA6BFC00FB3689 /* TaskListOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A193DC201DD29BFF006CF3BC /* TaskListOperation.swift */; };
+		A17B44DB1DBF6F3D00ADC1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17B44DA1DBF6F3D00ADC1EC /* Main.storyboard */; };
+		A17B44DD1DBF706700ADC1EC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B44DC1DBF706700ADC1EC /* Constant.swift */; };
+		A18D48751DB8EB620041963C /* CreateDownloadTorrentFileTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D48741DB8EB620041963C /* CreateDownloadTorrentFileTaskOperation.swift */; };
+		A18D487C1DB913B10041963C /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D48791DB913B10041963C /* KeychainSwift.swift */; };
+		A18D487D1DB913B10041963C /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D487A1DB913B10041963C /* KeychainSwiftAccessOptions.swift */; };
+		A18D487E1DB913B10041963C /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D487B1DB913B10041963C /* TegKeychainConstants.swift */; };
+		A191F05E1DBA47E700DD6A44 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191F05D1DBA47E700DD6A44 /* DownloadViewController.swift */; };
+		A191F0601DBA672000DD6A44 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191F05F1DBA672000DD6A44 /* AppRouter.swift */; };
+		A193DC1F1DD28B47006CF3BC /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A193DC1E1DD28B47006CF3BC /* TaskModel.swift */; };
+		A193DC211DD29BFF006CF3BC /* TaskListOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A193DC201DD29BFF006CF3BC /* TaskListOperation.swift */; };
+		A193DC221DD2A309006CF3BC /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A193DC1E1DD28B47006CF3BC /* TaskModel.swift */; };
+		A19C67FD1DB63B2C006B4298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C67FC1DB63B2C006B4298 /* AppDelegate.swift */; };
+		A19C67FF1DB63B2C006B4298 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C67FE1DB63B2C006B4298 /* LoginViewController.swift */; };
+		A19C68041DB63B2C006B4298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19C68031DB63B2C006B4298 /* Assets.xcassets */; };
+		A19C68071DB63B2C006B4298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C68051DB63B2C006B4298 /* LaunchScreen.storyboard */; };
+		A1C07F211DC240C10030EBB0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C07F1F1DC240C10030EBB0 /* MainInterface.storyboard */; };
+		A1C07F251DC240C10030EBB0 /* Download Torrent Share Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A1C07F1B1DC240C10030EBB0 /* Download Torrent Share Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1C07F2A1DC241A40030EBB0 /* ShareExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C07F291DC241A40030EBB0 /* ShareExtension.swift */; };
+		A1C07F3A1DC24AA40030EBB0 /* SynologyWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A103CCF31DB6C41C0051EBB5 /* SynologyWebService.swift */; };
+		A1C07F3B1DC24AA40030EBB0 /* LoginOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A103CCF51DB6CFE10051EBB5 /* LoginOperation.swift */; };
+		A1C07F3C1DC24AA40030EBB0 /* CreateDownloadTorrentFileTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D48741DB8EB620041963C /* CreateDownloadTorrentFileTaskOperation.swift */; };
+		A1C07F3D1DC24AA40030EBB0 /* LogoutOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1243CCA1DB9670B00BC25B3 /* LogoutOperation.swift */; };
+		A1C07F3E1DC24AA40030EBB0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FA2B571DBD10D000787D60 /* UserManager.swift */; };
+		A1C07F3F1DC24AAB0030EBB0 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D48791DB913B10041963C /* KeychainSwift.swift */; };
+		A1C07F401DC24AAB0030EBB0 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D487A1DB913B10041963C /* KeychainSwiftAccessOptions.swift */; };
+		A1C07F411DC24AAB0030EBB0 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D487B1DB913B10041963C /* TegKeychainConstants.swift */; };
+		A1C07F421DC251210030EBB0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B44DC1DBF706700ADC1EC /* Constant.swift */; };
+		A1FA2B581DBD10D000787D60 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FA2B571DBD10D000787D60 /* UserManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1C07F231DC240C10030EBB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A19C67F11DB63B2C006B4298 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C07F1A1DC240C10030EBB0;
+			remoteInfo = DaidDsDownloadShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1C07F141DC21C8C0030EBB0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1C07F251DC240C10030EBB0 /* Download Torrent Share Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A103CCF31DB6C41C0051EBB5 /* SynologyWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynologyWebService.swift; sourceTree = "<group>"; };
+		A103CCF51DB6CFE10051EBB5 /* LoginOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOperation.swift; sourceTree = "<group>"; };
+		A1243CCA1DB9670B00BC25B3 /* LogoutOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutOperation.swift; sourceTree = "<group>"; };
+		A14863961DCB755600557B94 /* CreateDownloadTorrentURLTaskOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDownloadTorrentURLTaskOperation.swift; sourceTree = "<group>"; };
+		A17B44DA1DBF6F3D00ADC1EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A17B44DC1DBF706700ADC1EC /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A18D48741DB8EB620041963C /* CreateDownloadTorrentFileTaskOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDownloadTorrentFileTaskOperation.swift; sourceTree = "<group>"; };
+		A18D48791DB913B10041963C /* KeychainSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwift.swift; sourceTree = "<group>"; };
+		A18D487A1DB913B10041963C /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		A18D487B1DB913B10041963C /* TegKeychainConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegKeychainConstants.swift; sourceTree = "<group>"; };
+		A18D487F1DB91F110041963C /* DaidDsDownload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DaidDsDownload.entitlements; sourceTree = "<group>"; };
+		A191F05D1DBA47E700DD6A44 /* DownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		A191F05F1DBA672000DD6A44 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		A193DC1E1DD28B47006CF3BC /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		A193DC201DD29BFF006CF3BC /* TaskListOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListOperation.swift; sourceTree = "<group>"; };
+		A19C67F91DB63B2C006B4298 /* DS Torrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DS Torrent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19C67FC1DB63B2C006B4298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A19C67FE1DB63B2C006B4298 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A19C68031DB63B2C006B4298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A19C68061DB63B2C006B4298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A19C68081DB63B2C006B4298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C07F1B1DC240C10030EBB0 /* Download Torrent Share Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Download Torrent Share Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C07F201DC240C10030EBB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A1C07F221DC240C10030EBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C07F291DC241A40030EBB0 /* ShareExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareExtension.swift; sourceTree = "<group>"; };
+		A1C07F441DC258D10030EBB0 /* DaidDsDownloadShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DaidDsDownloadShareExtension.entitlements; sourceTree = "<group>"; };
+		A1FA2B571DBD10D000787D60 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A19C67F61DB63B2C006B4298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C07F181DC240C10030EBB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A174EC771DBE41C800E59A05 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A17B44DA1DBF6F3D00ADC1EC /* Main.storyboard */,
+				A19C67FE1DB63B2C006B4298 /* LoginViewController.swift */,
+				A191F05D1DBA47E700DD6A44 /* DownloadViewController.swift */,
+			);
+			name = ViewControllers;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A174EC781DBE41E100E59A05 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				A19C68031DB63B2C006B4298 /* Assets.xcassets */,
+				A19C68051DB63B2C006B4298 /* LaunchScreen.storyboard */,
+				A19C68081DB63B2C006B4298 /* Info.plist */,
+				A18D487F1DB91F110041963C /* DaidDsDownload.entitlements */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		A18D48771DB9137E0041963C /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				A18D48791DB913B10041963C /* KeychainSwift.swift */,
+				A18D487A1DB913B10041963C /* KeychainSwiftAccessOptions.swift */,
+				A18D487B1DB913B10041963C /* TegKeychainConstants.swift */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		A18D48801DB9212F0041963C /* SynologyWebService */ = {
+			isa = PBXGroup;
+			children = (
+				A103CCF31DB6C41C0051EBB5 /* SynologyWebService.swift */,
+				A103CCF51DB6CFE10051EBB5 /* LoginOperation.swift */,
+				A18D48741DB8EB620041963C /* CreateDownloadTorrentFileTaskOperation.swift */,
+				A14863961DCB755600557B94 /* CreateDownloadTorrentURLTaskOperation.swift */,
+				A193DC201DD29BFF006CF3BC /* TaskListOperation.swift */,
+				A1243CCA1DB9670B00BC25B3 /* LogoutOperation.swift */,
+				A1FA2B571DBD10D000787D60 /* UserManager.swift */,
+				A193DC1E1DD28B47006CF3BC /* TaskModel.swift */,
+			);
+			path = SynologyWebService;
+			sourceTree = "<group>";
+		};
+		A19C67F01DB63B2C006B4298 = {
+			isa = PBXGroup;
+			children = (
+				A19C67FB1DB63B2C006B4298 /* DaidDsDownload */,
+				A1C07F1C1DC240C10030EBB0 /* DaidDsDownloadShareExtension */,
+				A19C67FA1DB63B2C006B4298 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A19C67FA1DB63B2C006B4298 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A19C67F91DB63B2C006B4298 /* DS Torrent.app */,
+				A1C07F1B1DC240C10030EBB0 /* Download Torrent Share Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A19C67FB1DB63B2C006B4298 /* DaidDsDownload */ = {
+			isa = PBXGroup;
+			children = (
+				A174EC781DBE41E100E59A05 /* Project */,
+				A174EC771DBE41C800E59A05 /* ViewControllers */,
+				A18D48801DB9212F0041963C /* SynologyWebService */,
+				A18D48771DB9137E0041963C /* ThirdParty */,
+				A19C67FC1DB63B2C006B4298 /* AppDelegate.swift */,
+				A191F05F1DBA672000DD6A44 /* AppRouter.swift */,
+				A17B44DC1DBF706700ADC1EC /* Constant.swift */,
+			);
+			path = DaidDsDownload;
+			sourceTree = "<group>";
+		};
+		A1C07F1C1DC240C10030EBB0 /* DaidDsDownloadShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A1C07F441DC258D10030EBB0 /* DaidDsDownloadShareExtension.entitlements */,
+				A1C07F1F1DC240C10030EBB0 /* MainInterface.storyboard */,
+				A1C07F221DC240C10030EBB0 /* Info.plist */,
+				A1C07F291DC241A40030EBB0 /* ShareExtension.swift */,
+			);
+			path = DaidDsDownloadShareExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A19C67F81DB63B2C006B4298 /* DS Torrent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19C680B1DB63B2C006B4298 /* Build configuration list for PBXNativeTarget "DS Torrent" */;
+			buildPhases = (
+				A19C67F51DB63B2C006B4298 /* Sources */,
+				A19C67F61DB63B2C006B4298 /* Frameworks */,
+				A19C67F71DB63B2C006B4298 /* Resources */,
+				A1C07F141DC21C8C0030EBB0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C07F241DC240C10030EBB0 /* PBXTargetDependency */,
+			);
+			name = "DS Torrent";
+			productName = DaidDsDownload;
+			productReference = A19C67F91DB63B2C006B4298 /* DS Torrent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1C07F1A1DC240C10030EBB0 /* Download Torrent Share Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C07F261DC240C10030EBB0 /* Build configuration list for PBXNativeTarget "Download Torrent Share Extension" */;
+			buildPhases = (
+				A1C07F171DC240C10030EBB0 /* Sources */,
+				A1C07F181DC240C10030EBB0 /* Frameworks */,
+				A1C07F191DC240C10030EBB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Download Torrent Share Extension";
+			productName = DaidDsDownloadShareExtension;
+			productReference = A1C07F1B1DC240C10030EBB0 /* Download Torrent Share Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A19C67F11DB63B2C006B4298 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Nicolas Bellon";
+				TargetAttributes = {
+					A19C67F81DB63B2C006B4298 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JK367LMMQN;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					A1C07F1A1DC240C10030EBB0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JK367LMMQN;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A19C67F41DB63B2C006B4298 /* Build configuration list for PBXProject "DaidDsDownload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = A19C67F01DB63B2C006B4298;
+			productRefGroup = A19C67FA1DB63B2C006B4298 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A19C67F81DB63B2C006B4298 /* DS Torrent */,
+				A1C07F1A1DC240C10030EBB0 /* Download Torrent Share Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A19C67F71DB63B2C006B4298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17B44DB1DBF6F3D00ADC1EC /* Main.storyboard in Resources */,
+				A19C68071DB63B2C006B4298 /* LaunchScreen.storyboard in Resources */,
+				A19C68041DB63B2C006B4298 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C07F191DC240C10030EBB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C07F211DC240C10030EBB0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A19C67F51DB63B2C006B4298 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18D48751DB8EB620041963C /* CreateDownloadTorrentFileTaskOperation.swift in Sources */,
+				A19C67FF1DB63B2C006B4298 /* LoginViewController.swift in Sources */,
+				A193DC211DD29BFF006CF3BC /* TaskListOperation.swift in Sources */,
+				A18D487D1DB913B10041963C /* KeychainSwiftAccessOptions.swift in Sources */,
+				A1243CCB1DB9670B00BC25B3 /* LogoutOperation.swift in Sources */,
+				A19C67FD1DB63B2C006B4298 /* AppDelegate.swift in Sources */,
+				A103CCF61DB6CFE10051EBB5 /* LoginOperation.swift in Sources */,
+				A1FA2B581DBD10D000787D60 /* UserManager.swift in Sources */,
+				A14863971DCB755600557B94 /* CreateDownloadTorrentURLTaskOperation.swift in Sources */,
+				A103CCF41DB6C41C0051EBB5 /* SynologyWebService.swift in Sources */,
+				A191F0601DBA672000DD6A44 /* AppRouter.swift in Sources */,
+				A17B44DD1DBF706700ADC1EC /* Constant.swift in Sources */,
+				A18D487E1DB913B10041963C /* TegKeychainConstants.swift in Sources */,
+				A193DC1F1DD28B47006CF3BC /* TaskModel.swift in Sources */,
+				A191F05E1DBA47E700DD6A44 /* DownloadViewController.swift in Sources */,
+				A18D487C1DB913B10041963C /* KeychainSwift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C07F171DC240C10030EBB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C07F3E1DC24AA40030EBB0 /* UserManager.swift in Sources */,
+				A1C07F3A1DC24AA40030EBB0 /* SynologyWebService.swift in Sources */,
+				A1C07F3D1DC24AA40030EBB0 /* LogoutOperation.swift in Sources */,
+				A1C07F3C1DC24AA40030EBB0 /* CreateDownloadTorrentFileTaskOperation.swift in Sources */,
+				A14863981DCB7D2F00557B94 /* CreateDownloadTorrentURLTaskOperation.swift in Sources */,
+				A1C07F401DC24AAB0030EBB0 /* KeychainSwiftAccessOptions.swift in Sources */,
+				A150938F1DDA6BFC00FB3689 /* TaskListOperation.swift in Sources */,
+				A193DC221DD2A309006CF3BC /* TaskModel.swift in Sources */,
+				A1C07F3F1DC24AAB0030EBB0 /* KeychainSwift.swift in Sources */,
+				A1C07F3B1DC24AA40030EBB0 /* LoginOperation.swift in Sources */,
+				A1C07F421DC251210030EBB0 /* Constant.swift in Sources */,
+				A1C07F2A1DC241A40030EBB0 /* ShareExtension.swift in Sources */,
+				A1C07F411DC24AAB0030EBB0 /* TegKeychainConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1C07F241DC240C10030EBB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C07F1A1DC240C10030EBB0 /* Download Torrent Share Extension */;
+			targetProxy = A1C07F231DC240C10030EBB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A19C68051DB63B2C006B4298 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A19C68061DB63B2C006B4298 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A1C07F1F1DC240C10030EBB0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C07F201DC240C10030EBB0 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A19C68091DB63B2C006B4298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_GROUP = group.com.nicolasbellon.dsdownload.shared.new;
+				APP_ID_PREFIX = JK367LMMQN;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JK367LMMQN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A19C680A1DB63B2C006B4298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_GROUP = group.com.nicolasbellon.dsdownload.shared.new;
+				APP_ID_PREFIX = JK367LMMQN;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JK367LMMQN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A19C680C1DB63B2C006B4298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DaidDsDownload/DaidDsDownload.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK367LMMQN;
+				INFOPLIST_FILE = DaidDsDownload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasbellon.dsdownload.new.try;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A19C680D1DB63B2C006B4298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DaidDsDownload/DaidDsDownload.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK367LMMQN;
+				INFOPLIST_FILE = DaidDsDownload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasbellon.dsdownload.new.try;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1C07F271DC240C10030EBB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DaidDsDownloadShareExtension/DaidDsDownloadShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK367LMMQN;
+				INFOPLIST_FILE = DaidDsDownloadShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasbellon.dsdownload.new.try.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1C07F281DC240C10030EBB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DaidDsDownloadShareExtension/DaidDsDownloadShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK367LMMQN;
+				INFOPLIST_FILE = DaidDsDownloadShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasbellon.dsdownload.new.try.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A19C67F41DB63B2C006B4298 /* Build configuration list for PBXProject "DaidDsDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19C68091DB63B2C006B4298 /* Debug */,
+				A19C680A1DB63B2C006B4298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A19C680B1DB63B2C006B4298 /* Build configuration list for PBXNativeTarget "DS Torrent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19C680C1DB63B2C006B4298 /* Debug */,
+				A19C680D1DB63B2C006B4298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C07F261DC240C10030EBB0 /* Build configuration list for PBXNativeTarget "Download Torrent Share Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C07F271DC240C10030EBB0 /* Debug */,
+				A1C07F281DC240C10030EBB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A19C67F11DB63B2C006B4298 /* Project object */;
+}

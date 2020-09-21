@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="DS_Torrent" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daïd DS Download" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axu-QG-lb3">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Server URL (https://serverIP:port)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QnZ-Xw-aSH">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4he-VR-rof">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j0Q-1m-UQI">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXj-0V-y1r">
+                                <color key="backgroundColor" red="0.98846238851547241" green="0.83073705434799194" blue="0.54239517450332642" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="e3n-WO-vxu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Connect">
+                                    <color key="titleColor" red="0.094117656349999995" green="0.09803922474" blue="0.094117656349999995" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FwD-wX-dvh"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uUy-Nx-1yg">
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.45882352941176469" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QnZ-Xw-aSH" firstAttribute="top" secondItem="Axu-QG-lb3" secondAttribute="bottom" constant="45.5" id="3QJ-5w-bjG"/>
+                            <constraint firstItem="uUy-Nx-1yg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5G5-wu-lT6"/>
+                            <constraint firstItem="4he-VR-rof" firstAttribute="leading" secondItem="QnZ-Xw-aSH" secondAttribute="leading" id="9mO-AT-EWh"/>
+                            <constraint firstItem="CXj-0V-y1r" firstAttribute="top" secondItem="j0Q-1m-UQI" secondAttribute="bottom" constant="20" id="DKE-RS-LnI"/>
+                            <constraint firstItem="j0Q-1m-UQI" firstAttribute="top" secondItem="4he-VR-rof" secondAttribute="bottom" constant="12" id="I4s-V0-atd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QnZ-Xw-aSH" secondAttribute="trailing" id="PM6-Wf-x9s"/>
+                            <constraint firstItem="Axu-QG-lb3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QCx-c5-4Di"/>
+                            <constraint firstItem="4he-VR-rof" firstAttribute="trailing" secondItem="QnZ-Xw-aSH" secondAttribute="trailing" id="QOv-3n-vTI"/>
+                            <constraint firstItem="CXj-0V-y1r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UcQ-oK-FDZ"/>
+                            <constraint firstItem="uUy-Nx-1yg" firstAttribute="top" secondItem="CXj-0V-y1r" secondAttribute="bottom" constant="26" id="f2I-uG-qLz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CXj-0V-y1r" secondAttribute="trailing" id="jon-5k-IAG"/>
+                            <constraint firstItem="Axu-QG-lb3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="lqC-uc-f1T"/>
+                            <constraint firstItem="QnZ-Xw-aSH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mfy-hp-j4e"/>
+                            <constraint firstItem="j0Q-1m-UQI" firstAttribute="leading" secondItem="4he-VR-rof" secondAttribute="leading" id="oIO-4M-G1f"/>
+                            <constraint firstItem="4he-VR-rof" firstAttribute="top" secondItem="QnZ-Xw-aSH" secondAttribute="bottom" constant="12" id="ryG-6G-Lot"/>
+                            <constraint firstItem="j0Q-1m-UQI" firstAttribute="trailing" secondItem="4he-VR-rof" secondAttribute="trailing" id="ymk-Y9-nW6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ecp-Ap-t9T"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="connectButton" destination="CXj-0V-y1r" id="8xu-Dv-M4e"/>
+                        <outlet property="connectionSpinerView" destination="uUy-Nx-1yg" id="t5o-km-daM"/>
+                        <outlet property="loginTextField" destination="4he-VR-rof" id="fF4-dx-1Ye"/>
+                        <outlet property="passwordTextField" destination="j0Q-1m-UQI" id="vt2-KB-ehz"/>
+                        <outlet property="serverUrlTextField" destination="QnZ-Xw-aSH" id="AAv-eG-8QQ"/>
+                        <outlet property="titleLabel" destination="Axu-QG-lb3" id="IwX-2F-A7u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="-224.4377811094453"/>
+        </scene>
+        <!--Download View Controller-->
+        <scene sceneID="rDk-ce-3cB">
+            <objects>
+                <viewController storyboardIdentifier="DownloadViewController" id="gcJ-Jt-p01" customClass="DownloadViewController" customModule="DS_Torrent" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XyJ-Nd-pES"/>
+                        <viewControllerLayoutGuide type="bottom" id="aUs-lh-4pr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7IA-yT-2Pd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daïd DS Download" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu4-z2-5a3">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go on Safari and Downlod Torrent File ! :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAK-dK-Idt">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfA-Lo-gxh">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv8-qO-jlF">
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.80000000000000004" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="bPP-LU-GRf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="open DS Get">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openDSGetButtonDidTouch:" destination="gcJ-Jt-p01" eventType="touchUpInside" id="QPI-c9-ZaH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPK-29-4Ji">
+                                        <color key="backgroundColor" red="0.98431372549019602" green="0.80000000000000004" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="J6L-1H-pe4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Disconnect">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="disconnectDidTouch:" destination="gcJ-Jt-p01" eventType="touchUpInside" id="Clh-eB-NJ7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fv8-qO-jlF" firstAttribute="leading" secondItem="YfA-Lo-gxh" secondAttribute="leading" id="CDj-uX-UbK"/>
+                                    <constraint firstItem="PPK-29-4Ji" firstAttribute="leading" secondItem="YfA-Lo-gxh" secondAttribute="leading" id="Fep-vu-9Aj"/>
+                                    <constraint firstAttribute="trailing" secondItem="fv8-qO-jlF" secondAttribute="trailing" id="Jly-N7-8Bs"/>
+                                    <constraint firstAttribute="trailing" secondItem="PPK-29-4Ji" secondAttribute="trailing" id="elM-xS-7ok"/>
+                                    <constraint firstItem="PPK-29-4Ji" firstAttribute="top" secondItem="fv8-qO-jlF" secondAttribute="bottom" constant="8" id="ev2-4u-bfr"/>
+                                    <constraint firstAttribute="bottom" secondItem="PPK-29-4Ji" secondAttribute="bottom" id="law-hW-nZl"/>
+                                    <constraint firstItem="fv8-qO-jlF" firstAttribute="top" secondItem="YfA-Lo-gxh" secondAttribute="top" id="mpa-gB-iiy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.45490196078431372" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sAK-dK-Idt" firstAttribute="centerX" secondItem="7IA-yT-2Pd" secondAttribute="centerX" id="1vP-Kr-4pa"/>
+                            <constraint firstItem="sAK-dK-Idt" firstAttribute="top" secondItem="Vu4-z2-5a3" secondAttribute="bottom" constant="58" id="9sx-4t-8MB"/>
+                            <constraint firstItem="YfA-Lo-gxh" firstAttribute="centerY" secondItem="7IA-yT-2Pd" secondAttribute="centerY" id="HB0-l6-KAK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YfA-Lo-gxh" secondAttribute="trailing" id="Ni3-yc-4oB"/>
+                            <constraint firstItem="Vu4-z2-5a3" firstAttribute="top" secondItem="XyJ-Nd-pES" secondAttribute="bottom" constant="40" id="jYe-3p-VO1"/>
+                            <constraint firstItem="Vu4-z2-5a3" firstAttribute="centerX" secondItem="7IA-yT-2Pd" secondAttribute="centerX" id="kFi-i5-lE1"/>
+                            <constraint firstItem="YfA-Lo-gxh" firstAttribute="leading" secondItem="7IA-yT-2Pd" secondAttribute="leadingMargin" id="yu8-GY-6Ph"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zlH-ep-wDM"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="disconnectButton" destination="PPK-29-4Ji" id="ZA4-eN-W31"/>
+                        <outlet property="openDSGetButton" destination="fv8-qO-jlF" id="1Y6-zH-qQ3"/>
+                        <outlet property="subtitleLabel" destination="sAK-dK-Idt" id="i0i-X3-nbi"/>
+                        <outlet property="titleLabel" destination="Vu4-z2-5a3" id="tt2-lg-RoJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XXI-v1-nzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605.5999999999999" y="-161.46926536731635"/>
+        </scene>
+    </scenes>
+</document>
