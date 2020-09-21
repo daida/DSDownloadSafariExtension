@@ -1,4 +1,4 @@
-# DSDownloadSafariExtension
+# DS Torrent iOS Safari Extension for NAS Synology
 
 iOS Safari Extension to Download Torrent files on your Synology NAS in one touch !
 
